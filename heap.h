@@ -81,6 +81,7 @@ class Heap4
 	template<typename StreamType>
 	void print(StreamType& stream) const
 	{
-		;
+		for (size_t i = 0; i < count; ++i)
+			stream << vec[i].first << " " << vec[i].second << "\t";
 	}
 };
