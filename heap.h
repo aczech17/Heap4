@@ -42,7 +42,7 @@ class Heap4
 	{
 		if (count == 0)
 		{
-			throw(std::logic_error("HEAP EMPTY"));
+			throw(std::logic_error("HEAP EMPTY")); // NO I KURDE W£AŒNIE NIE WIEM CZY TO JEST DOBRZE :/
 			exit(EXIT_FAILURE);
 		}
 		return vec[0];
@@ -77,6 +77,7 @@ class Heap4
 		return count;
 	}
 
+	////// DO ZROBIENIA ////////
 	template<typename StreamType>
 	void print(StreamType& stream) const
 	{

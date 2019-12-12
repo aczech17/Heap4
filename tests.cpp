@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cassert>
 #include "heap.h"
+#include "benchmark.h"
 
 void unit_test() 
 {
@@ -64,5 +65,15 @@ void unit_test()
 
 int main()
 {
-	unit_test();
+	Heap4 <int, int> huj;
+	//huj.insert(2, 1);
+	//huj.insert(3, 7);
+	try
+	{
+		std::cout << huj.peek().second;;
+	}
+	catch (std::logic_error)
+	{
+		;
+	}
 }
